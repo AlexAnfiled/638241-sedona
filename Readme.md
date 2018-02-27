@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Згривец](https://up.htmlacademy.ru/htmlcss/20/user/638241).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мигаева](https://htmlacademy.ru/profile/hatewait).
 
 ---
 
