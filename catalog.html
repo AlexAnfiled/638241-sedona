@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона, Внутренняя страница</title>
+  </head>
+  <body>
+     <header class="main-header">
+      <nav class="main-navigation">
+       <a class="main-header-logo" href="index.html">
+         <img src="sedona-logo.svg" width="67" height="55" alt="Логотип сайта Седона">
+       </a>
+       <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photo-video.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта</a></li>
+          <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+       </ul>
+      </nav>
+    </header>
+    <main class="container"> 
+       <section class="filters">
+          <h2 class="visually-hidden">Фильтр поиска</h2>
+          <!-- Здесь будет форма-->
+       </section>
+    
+       <section class="sort-hotels">
+          <p class="sort-hotels-result">Найдено:3</p>
+          <p>Сортировка:</p>
+          <ul class="sort-options-list">
+              <li><a class="sort-options-item" href="#">По цене</a></li>
+              <li><a class="sort-options-item" href="#">По типу</a></li>
+              <li><a class="sort-options-item" href="#">По рейтингу</a></li>
+          </ul>
+          <ul class="sort-hotels-order">
+              <li><a class="sort-hotels-order-down" href="#"></a></li>
+              <li><a class="sort-hotels-order-up" href="#"></a></li> 
+          </ul>       
+       </section>
+       
+       <section class="catalog">
+          <h2 class="visually-hidden">Каталог жилья</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+               <h3>AMARA RESORT & SPA</h3>
+               <p>
+                  <img src="amara-resort-and-spa.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+               </p>
+               <span class="catalog-item-category">Гостиница</span>
+               <span class="catalog-item-price">от 4000р.</span>
+               <a class="detail-information" href="amara-detail.html">Подробнее</a>
+               <a class="button" href="#">Забронировать</a>
+               <span class="catalog-item-amara-stars"></span>
+               <p class="catalog-rating-value"> <!--Общий параграф для будущего серого фона -->
+                 <span class="catalog-item-rating">Рейтинг:</span>
+                 <span class="catalog-item-rating-value">8,5</span>
+               </p>
+            </li>
+            
+            <li class="catalog-item">
+               <h3>DESERT QUAIL INN</h3>
+               <p>
+                  <img src="desert-quail-inn.jpg" width="135" height="90" alt="DESERT QUAIL INN">
+               </p>
+               <span class="catalog-item-category">Мотель</span>
+               <span class="catalog-item-price">от 3000р.</span>
+               <a class="detail-information" href="desert-detail.html">Подробнее</a>
+               <a class="button" href="#">Забронировать</a>
+               <span class="catalog-item-desert-stars"></span>
+               <p class="catalog-rating-value"> <!--Общий параграф для будущего серого фона -->
+                 <span class="catalog-item-rating">Рейтинг:</span>
+                 <span class="catalog-item-rating-value">8,9</span>
+               </p>
+            </li>
+            
+            <li class="catalog-item">
+               <h3>VILLAS AT POCO DIABLO</h3>
+               <p>
+                  <img src="villas-at-poco-diablo.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+               </p>
+               <span class="catalog-item-category">Апартаменты</span>
+               <span class="catalog-item-price">от 2000р.</span>
+               <a class="detail-information" href="villas-detail.html">Подробнее</a>
+               <a class="button" href="#">Забронировать</a>
+               <span class="catalog-item-villas-stars"></span>
+               <p class="catalog-rating-value"> <!--Общий параграф для будущего серого фона -->
+                 <span class="catalog-item-rating">Рейтинг:</span>
+                 <span class="catalog-item-rating-value">9,2</span>
+               </p>
+            </li>
+          </ul>   
+       </section>                 
+    </main>
+    <footer class="main-footer">
+        <b class="footer-hashtag">#VISITSEDONA</b>
+        <div class="footer-social">
+          <ul>
+           <li><a class="social-button" href="#">Twitter</a></li>
+           <li><a class="social-button" href="#">Facebook</a></li>
+           <li><a class="social-button" href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <b>Website by</b>
+          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </p>
+    </footer>
+   </body>
+</html>
