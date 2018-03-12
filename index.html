@@ -83,34 +83,34 @@
          <div class="search-hotels-header">
            <h3 class="search-hotels-question">Заинтересовались?</h3>
            <p class="search-hotels-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-         </div>
-         <button type="button" class="modal-search-button">Поиск гостиницы в Седоне</button>   
+           <button type="button" class="modal-search-button">Поиск гостиницы в Седоне</button> 
+         </div>  
          <div class="modal modal-search">
            <form action="https://echo.htmlacademy.ru" method="post">
              <div class="modal modal-search-arrivals-departures">
                <p>
                  <label for="arrival-date" class="modal modal-search-arrival-container">Дата заезда:</label>
                  <input type="text" name="arrival-date" placeholder="2017-04-24" id="arrival-date">
-                 <button class="modal-search-arrival-calendar" type="button">Календарь</button>
+                 <button class="modal-search-arrival-calendar" type="button"><span class="visually-hidden">Календарь</span></button>
                </p>
                <p>
                  <label for="departure-date" class="modal modal-search-departure-container">Дата выезда:</label>
                  <input type="text" name="departure-date" placeholder="2017-07-04" id="departure-date">
-                 <button class="modal-search-departure-calendar" type="button">Календарь</button>
+                 <button class="modal-search-departure-calendar" type="button"><span class="visually-hidden">Календарь</span></button>
                </p>
              </div>
              <div class="modal modal-search-adults-children">
                <p>
                  <label class="modal modal-search-adults-container" for="adults">Взрослые:</label>
-                 <button class="visually-hidden adults-minus-button" type="button">-</button>
+                   <button class="visually-hidden adults-minus-button" type="button"><span class="visually-hidden">-</span></button>
                  <input type="number" name="adults-number" id="adults">
-                 <button class="visually-hidden adults-plus-button" type="button">+</button>
+                   <button class="visually-hidden adults-plus-button" type="button"><span class="visually-hidden">+</span></button>
                </p>
                <p>
                  <label class="modal modal-search-children-container" for="children">Дети:</label>
-                 <button class="visually-hidden children-minus-button" type="button">-</button>
+                   <button class="visually-hidden children-minus-button" type="button"><span class="visually-hidden">-</span></button>
                  <input type="number" name="children-number" id="children">
-                 <button class="visually-hidden children-plus-button" type="button">+</button> 
+                   <button class="visually-hidden children-plus-button" type="button"><span class="visually-hidden">+</span></button> 
                </p>
              </div>
              <button class="modal modal-search-find-button" type="submit">Найти</button>
