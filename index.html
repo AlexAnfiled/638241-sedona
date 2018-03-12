@@ -9,7 +9,7 @@
       <header class="main-header">
         <nav class="main-navigation">
          <a class="main-header-logo">
-           <img src="img/decorative%20images/sedona-logo.png" width="138" height="70" alt="Логотип сайта Седона">
+           <img src="img/decorative-images/sedona-logo.png" width="138" height="70" alt="Логотип сайта Седона">
          </a>
           <ul class="site-navigation">
             <li class="site-navigation-item"><a href="info.html">Информация</a></li>
@@ -34,7 +34,7 @@
             <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="cool-reasons-city-image">
-            <img src="img/content%20images/city-image.jpg" alt="Фото города">
+            <img src="img/content-images/city-image.jpg" alt="Фото города">
           </div>
         </section>
         <section class="offers">
@@ -58,7 +58,7 @@
             <p>Да, по нему можно пройти! Если вы осмелитесь</p>
           </div>
           <div class="cool-reasons-devil-bridge">
-            <img src="img/content%20images/devil-bridge.jpg" alt="Мост дьявола">
+            <img src="img/content-images/devil-bridge.jpg" alt="Мост дьявола">
           </div>
         </section>
         <section class="cool-reasons-other">
@@ -81,40 +81,36 @@
 
        <section class="search-hotels">
          <div class="search-hotels-header">
-           <p class="search-hotels-question">Заинтересовались?</p>
+           <h3 class="search-hotels-question">Заинтересовались?</h3>
            <p class="search-hotels-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
          </div>
+         <button type="button" class="modal-search-button">Поиск гостиницы в Седоне</button>   
          <div class="modal modal-search">
            <form action="https://echo.htmlacademy.ru" method="post">
-             <button type="button" class="modal-search-button">Поиск гостиницы в Седоне</button>
              <div class="modal modal-search-arrivals-departures">
                <p>
-                 <label class="modal modal-search-arrival-container">Дата заезда:
-                   <input type="text" name="arrival-date" placeholder="2017-04-24">
-                   <button class="visually-hidden modal-search-arrival-calendar" type="button">Календарь</button>
-                 </label>
+                 <label for="arrival-date" class="modal modal-search-arrival-container">Дата заезда:</label>
+                 <input type="text" name="arrival-date" placeholder="2017-04-24" id="arrival-date">
+                 <button class="modal-search-arrival-calendar" type="button">Календарь</button>
                </p>
                <p>
-                 <label class="modal modal-search-departure-container">Дата выезда:
-                   <input type="text" name="departure-date" placeholder="2017-07-04">
-                   <button class="visually-hidden modal-search-departure-calendar" type="button">Календарь</button>
-                 </label>
+                 <label for="departure-date" class="modal modal-search-departure-container">Дата выезда:</label>
+                 <input type="text" name="departure-date" placeholder="2017-07-04" id="departure-date">
+                 <button class="modal-search-departure-calendar" type="button">Календарь</button>
                </p>
              </div>
              <div class="modal modal-search-adults-children">
                <p>
-                 <label class="modal modal-search-adults-container" for="adults">Взрослые:
-                   <button class="visually-hidden adults-minus-button" type="button">-</button>
-                   <input type="pattern" name="adults-number" id="adults">
-                   <button class="visually-hidden adults-plus-button" type="button">+</button>
-                 </label>
+                 <label class="modal modal-search-adults-container" for="adults">Взрослые:</label>
+                 <button class="visually-hidden adults-minus-button" type="button">-</button>
+                 <input type="number" name="adults-number" id="adults">
+                 <button class="visually-hidden adults-plus-button" type="button">+</button>
                </p>
                <p>
-                 <label class="modal modal-search-children-container" for="children">Дети:
-                   <button class="visually-hidden children-minus-button" type="button">-</button>
-                   <input type="pattern" name="children-number" id="children">
-                   <button class="visually-hidden children-plus-button" type="button">+</button>
-                 </label>
+                 <label class="modal modal-search-children-container" for="children">Дети:</label>
+                 <button class="visually-hidden children-minus-button" type="button">-</button>
+                 <input type="number" name="children-number" id="children">
+                 <button class="visually-hidden children-plus-button" type="button">+</button> 
                </p>
              </div>
              <button class="modal modal-search-find-button" type="submit">Найти</button>
@@ -128,9 +124,9 @@
      <footer class="main-footer">
        <a class="footer-hashtag" href="https://visitsedona.com">#VISITSEDONA</a>
          <ul class="footer-social">
-           <li class="social-link"><a class="social-link-tw" href="#">Twitter</a></li>
-           <li class="social-link"><a class="social-link-fb" href="#">Facebook</a></li>
-           <li class="social-link"><a class="social-link-yt" href="#">Youtube</a></li>
+           <li class="social-link"><a class="social-link-tw" href="#"><span class="visually-hidden">Twitter</span></a></li>
+           <li class="social-link"><a class="social-link-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+           <li class="social-link"><a class="social-link-yt" href="#"><span class="visually-hidden">Youtube</span></a></li>
          </ul>
        <p class="footer-copyright">
          <span>Website by</span>
