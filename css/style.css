@@ -1,0 +1,412 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+/*ГЛАВНАЯ СТРАНИЦА*/
+
+/*Навигация*/
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: #cacaca;
+}
+
+/*Блок преимуществ*/
+
+.sedona-photo {
+  width: 1200px;
+  height: 780px;
+
+  background-image: url(/img/background-images/sedona-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sedona-welcome-heading {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.sedona-welcome-description {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+.cool-reasons-item-city,
+.cool-reasons-item-bridge {
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #81b3d2;
+}
+
+.cool-reasons-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.cool-reasons-item span,
+.cool-reasons-item p,
+.cool-reasons-other-item span,
+.cool-reasons-other-item p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.cool-reasons-other {
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.offers {
+  text-align: center;
+}
+
+/*Блок поиска гостиниц*/
+
+.search-hotels {
+  text-align: center;
+}
+
+.search-hotels-question {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search-hotels-info {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.modal-search-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+  outline: none;
+}
+
+.modal-search {
+  box-shadow: 0 5px 10px rgba(0, 0 ,0, 0.1);
+}
+.modal-search-button:hover {
+  background-color: #604e43;
+}
+
+.modal-search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.modal-search,
+.modal-search-arrivals-departures input,
+.modal-search-adults-children input {
+  font-size: 14px;
+  line-height: auto;
+  font-weight: 700;
+}
+
+.modal-search-arrivals-departures input {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.modal-search-arrivals-departures input:hover {
+  background-color:  #ebebeb;
+}
+
+.modal-search-arrivals-departures input:focus {
+  background-color:  #ffffff;
+}
+
+.modal-search-adults-children input {
+    background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.modal-search-find-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+  outline: none;
+}
+
+.modal-search-find-button:hover {
+  background-color: #669ec0;
+}
+
+.modal-search-find-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+/*Карта*/
+
+.map {
+  width: 1200px;
+  height: 593px;
+
+  background-image: url(/img/background-images/map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Футер*/
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  color: #000000;
+}
+
+.footer-copyright span,
+.footer-copyright a {
+  font-size: 14px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.footer-copyright a:hover {
+  color: #669ec0;
+}
+
+.footer-copyright a:active {
+  color: #5496bd;
+}
+
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social li {
+  list-style: none;
+}
+
+.social-link a {
+  color: #81b3d2;
+}
+
+.social-link a:hover {
+  color: #669ec0;
+}
+
+.social-link a:active {
+  color: #5496bd;
+}
+
+/*СТРАНИЦА КАТАЛОГА*/
+
+/*Навигация*/
+
+.site-navigation-current-item {
+  color: #766357;
+}
+
+/*Фильтр*/
+
+.filters {
+  color: #ffffff;
+
+  background-color: #3f535d;
+  background-image: url(/img/background-images/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-option-checkbox:hover {
+  background-color: #6a6a6a;
+}
+
+.price-per-day-show-button {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  color: #eeeeee;
+  background-color: transparent;
+
+  border: 2px solid white;
+  outline: none;
+}
+
+.price-per-day-show-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*Результаты поиска*/
+
+.sort-hotels {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-hotels-result {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sort-options-list li,
+.sort-hotels-order {
+  list-style: none;
+}
+
+.sort-options-list a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline dotted #81b3d2;
+}
+.sort-options-list a:hover {
+  color: #81b3d2;
+  text-decoration: underline dotted #81b3d2;
+}
+
+.sort-options-list a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*Каталог жилья*/
+
+.catalog-item-link {
+  font-size: 21px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.catalog-item-link:hover {
+  color: #81b3d2;
+}
+
+.catalog-item-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item-detail-information {
+  font-weight: 700;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+  outline: none;
+}
+
+.catalog-item-detail-information:hover {
+  background-color: #669ec0;
+}
+
+.catalog-item-detail-information:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.button-reserve {
+  font-weight: 700;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+  outline: none;
+}
+
+.button-reserve:hover {
+  background-color: #604e43;
+}
+
+.button-reserve:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.catalog-item-rating {
+  color: #666666;
+  background-color: #f2f2f2;
+}

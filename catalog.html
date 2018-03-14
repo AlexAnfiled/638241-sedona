@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона, Внутренняя страница</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
@@ -15,7 +18,7 @@
            <li class="site-navigation-item"><a href="info.html">Информация</a></li>
            <li class="site-navigation-item"><a href="photo-video.html">Фото и видео</a></li>
            <li class="site-navigation-item"><a href="map.html">Карта</a></li>
-           <li class="site-navigation-current-item"><a href="hotels.html">Гостиницы</a></li>
+           <li class="site-navigation-current-item">Гостиницы</li>
          </ul>
         </nav>
       </header>
@@ -64,7 +67,7 @@
                   </ul>
                </fieldset>
               <fieldset class="price-per-day">
-               <legend>Стоимость в сутки(Р)</legend>
+               <legend>Стоимость в сутки(Р):</legend>
                 <label>
                     <input class="vusially-hidden price-per-day-range-line" type="range" min="1" max="3000" step="10">
                 </label>
@@ -92,7 +95,7 @@
             <li class="catalog-item">
               <img src="img/content-images/amara-resort-and-spa.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
               <div>
-                <h3>AMARA RESORT & SPA</h3>
+                <h3><a class="catalog-item-link" href="amara-detail.html">AMARA RESORT & SPA</a></h3>
                 <div>
                   <span class="catalog-item-category">Гостиница</span>
                   <a class="catalog-item-detail-information" href="amara-detail.html">Подробнее</a>
@@ -110,13 +113,13 @@
                   <span></span>
                   <span></span>
                 </div>
-                <span class="catalog-item-rating">Рейтинг:8,5</span>
+                <span class="catalog-item-rating">Рейтинг: 8,5</span>
               </div>
             </li>
             <li class="catalog-item">
               <img src="img/content-images/desert-quail-inn.jpg" width="135" height="90" alt="DESERT QUAIL INN">
               <div>
-                <h3>DESERT QUAIL INN</h3>
+                <h3><a class="catalog-item-link" href="desert-detail.html">DESERT QUAIL INN</a></h3>
                 <div>
                   <span class="catalog-item-category">Мотель</span>
                   <a class="catalog-item-detail-information" href="desert-detail.html">Подробнее</a>
@@ -134,13 +137,13 @@
                   <span></span>
                   <span></span>
                 </div>
-                <span class="catalog-item-rating">Рейтинг:8,9</span>
+                <span class="catalog-item-rating">Рейтинг: 8,9</span>
               </div>
             </li>
             <li class="catalog-item">
               <img src="img/content-images/villas-at-poco-diablo.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
               <div>
-                <h3>VILLAS AT POCO DIABLO</h3>
+                <h3><a class="catalog-item-link" href="villas-detail.html">VILLAS AT POCO DIABLO</a></h3>
                 <div>
                   <span class="catalog-item-category">Апартаменты</span>
                   <a class="catalog-item-detail-information" href="villas-detail.html">Подробнее</a>
@@ -158,7 +161,7 @@
                   <span></span>
                   <span></span>
                 </div>
-                <span class="catalog-item-rating">Рейтинг:9,2</span>
+                <span class="catalog-item-rating">Рейтинг: 9,2</span>
               </div>
             </li>
            </ul>
