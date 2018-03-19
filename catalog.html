@@ -17,7 +17,7 @@
          <ul class="site-navigation">
            <li class="site-navigation-item"><a href="info.html">Информация</a></li>
            <li class="site-navigation-item"><a href="photo-video.html">Фото и видео</a></li>
-           <li class="site-navigation-item"><a href="map.html">Карта</a></li>
+           <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
            <li class="site-navigation-current-item">Гостиницы</li>
          </ul>
         </nav>
@@ -26,7 +26,8 @@
         <section class="filters">
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <h2 class="visually-hidden">Фильтр поиска</h2>
-              <fieldset class="infrastructure">
+              <div class="infrastructure-type-of-housing-wrapper">
+               <fieldset class="infrastructure">
                 <legend>Инфраструктура:</legend>
                   <ul>
                     <li class="filter-option">
@@ -66,19 +67,22 @@
                     </li>
                   </ul>
                </fieldset>
-              <fieldset class="price-per-day">
-               <legend>Стоимость в сутки(Р):</legend>
-                <label>
+              </div>
+              <div class=".price-per-day-wrapper">
+               <fieldset class="price-per-day">
+                <legend>Стоимость в сутки(Р):</legend>
+                  <label>
                     <input class="vusially-hidden price-per-day-range-line" type="range" min="1" max="3000" step="10">
-                </label>
-                <button class="price-per-day-show-button" type="submit">Показать</button>
-              </fieldset>
+                  </label>
+                  <button class="price-per-day-show-button" type="submit">Показать</button>
+               </fieldset>
+              </div>
            </form>
         </section>
         <section class="sort-hotels">
           <h3 class="visually-hidden">Результаты поиска</h3>
           <p class="sort-hotels-result">Найдено:3</p>
-          <p>Сортировка:</p>
+          <p class="sort-hotels-sorting">Сортировка:</p>
           <ul class="sort-options-list">
             <li class="sort-options-current-item">По цене</li>
             <li class="sort-options-item"><a href="#">По типу</a></li>
@@ -92,15 +96,16 @@
         <section class="catalog">
           <h2 class="visually-hidden">Каталог жилья</h2>
           <ul class="catalog-list">
+           <div class="catalog-item-amara">
             <li class="catalog-item">
               <img src="img/content-images/amara-resort-and-spa.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
               <div>
                 <h3><a class="catalog-item-link" href="amara-detail.html">AMARA RESORT & SPA</a></h3>
-                <div>
+                <div class="catalog-item-hotel-container">
                   <span class="catalog-item-category">Гостиница</span>
                   <a class="catalog-item-detail-information" href="amara-detail.html">Подробнее</a>
                 </div>
-                <div>
+                <div class="catalog-item-reserve-container">
                   <span class="catalog-item-price">от 4000р.</span>
                   <a class="button-reserve" href="#">Забронировать</a>
                 </div>
@@ -116,6 +121,7 @@
                 <span class="catalog-item-rating">Рейтинг: 8,5</span>
               </div>
             </li>
+            </div>
             <li class="catalog-item">
               <img src="img/content-images/desert-quail-inn.jpg" width="135" height="90" alt="DESERT QUAIL INN">
               <div>

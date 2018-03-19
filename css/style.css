@@ -20,6 +20,7 @@ a {
   text-decoration: none;
 }
 
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -31,12 +32,13 @@ a {
   overflow: hidden;
 }
 
+
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-
+ z-index: 1;
   background-color: #ffffff;
 }
 
@@ -61,11 +63,11 @@ a {
 .sedona-photo {
   width: 1200px;
   height: 780px;
-  
-  background-color: #88b6d1;    
+
+  background-color: #88b6d1;
   background-image: url(../img/background-images/sedona-photo.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 
 .sedona-welcome-heading {
@@ -89,7 +91,8 @@ a {
   background-color: #81b3d2;
 }
 
-.cool-reasons-item h3 {
+.cool-reasons-item h3,
+.cool-reasons-other h3 {
   font-size: 21px;
   line-height: 21px;
 }
@@ -109,6 +112,13 @@ a {
 
 .offers {
   text-align: center;
+}
+
+.offers-housing h3,
+.offers-food h3,
+.offers-souvenirs h3 {
+  font-size: 21px;
+  line-height: 21px;
 }
 
 /*Блок поиска гостиниц*/
@@ -427,3 +437,299 @@ a {
   color: #666666;
   background-color: #f2f2f2;
 }
+
+
+/*СЕТКИ*/
+
+/*Главная страница*/
+
+.main-header-logo {
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.site-navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  margin-top: -65px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.site-navigation-item {
+  width: 300px;
+}
+
+.site-navigation-item:nth-child(1) {
+  text-align: left;
+  padding-left: 74px;
+}
+
+.site-navigation-item:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation-item:nth-child(3) {
+  text-align: right;
+}
+
+.site-navigation-item:nth-child(4) {
+  text-align: right;
+  padding-right: 74px;
+}
+
+.sedona-photo {
+
+  margin-bottom: -156px;
+}
+
+.sedona-photo h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.sedona-welcome {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.sedona-welcome-heading {
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-welcome-description {
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+  padding-bottom: 52px;
+}
+
+.cool-reasons {
+  display: flex;
+
+  width: 1200px;
+  height: 256px;
+}
+
+.cool-reasons-item-city {
+  width: 400px;
+
+  padding-top: 45px;
+  padding-right: 60px;
+  padding-bottom: 63px;
+  padding-left:  60px;
+}
+
+.cool-reasons-item-bridge {
+  order: 1;
+
+  width: 400px;
+
+  padding-top: 45px;
+  padding-right: 45px;
+  padding-bottom: 63px;
+  padding-left:  50px;
+}
+
+.offers {
+  display: flex;
+  justify-content: space-around;
+
+  width: 1200px;
+  height: 330px;
+}
+
+.offers-housing,
+.offers-food,
+.offers-souvenirs {
+
+  padding-top: 163px;
+  padding-right: 74px;
+  padding-bottom: 85px;
+  padding-left: 74px;
+}
+
+.cool-reasons-other {
+  display: flex;
+  width: 1200px;
+  height: 256px;
+}
+
+.cool-reasons-other-item {
+  padding-top: 45px;
+  padding-right: 68px;
+  padding-bottom: 63px;
+  padding-left: 69px;
+}
+
+.search-hotels-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+}
+
+.search-hotels-question {
+  margin: 0;
+  padding-top: 55px;
+}
+
+.search-hotels-info {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.modal-search-button {
+  padding-top: 33px;
+  padding-bottom: 30px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.main-footer {
+  display: flex;
+
+  padding-top: 36px;
+  padding-bottom: 36px;
+  align-items: center;
+}
+
+.footer-hashtag {
+  width: 240px;
+  margin: 0;
+  margin-right: 88px;
+  margin-left: 74px;
+}
+
+.footer-social {
+  display: flex;
+  width: 400px;
+  margin: 0;
+  margin-right: 88px;
+}
+
+.footer-copright {
+  width: 240px;
+  margin: 0;
+  margin-left: 88px;
+  margin-right: 74px;
+}
+
+/*Гостиницы*/
+
+.filter {
+  display: flex;
+  width: 1200px;
+  height: 217px;
+}
+
+ul .filter-option  {
+  list-style: none;
+}
+
+.infrastructure-type-of-housing-wrapper {
+  display: flex;
+  margin-top: 30px;
+}
+
+.infrastructure {
+  width: 241px;
+  margin-left: 73px;
+  align-items: center;
+}
+
+.type-of-housing {
+  width: 288px;
+  margin-right: 200px;
+}
+
+.price-per-day  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 328px;
+  margin-right: 73px;
+  margin-top: 30px;
+}
+
+.sort-hotels {
+  display: flex;
+  align-items: baseline;
+}
+
+.sort-hotels-result {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 75px;
+  margin-right: 50px;
+}
+
+.sort-hotels-sorting {
+  margin: 0;
+  padding: 0;
+  margin-top: 38px;
+  margin-bottom: 34px;
+  margin-left: 49px;
+  margin-right: 40px;
+}
+
+.sort-options-list  {
+  display: flex;
+  list-style: none;
+}
+
+.sort-options-list li {
+  margin-right: 32px;
+}
+
+.catalog-item-amara {
+  display: flex;
+  align-content: center;
+}
+
+.catalog-item {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-item-hotel-container {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  width: 112px;
+}
+
+.catalog-item-reserve-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items:flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
