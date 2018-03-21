@@ -512,14 +512,13 @@ a {
 }
 
 .sedona-photo {
-  height: 580px;
+  height: 568px;
   background-position: center -56px;
 }
 
 .sedona-welcome {
   display: flex;
   flex-direction: column;
-  margin: -12px;
 }
 
 .sedona-welcome-heading {
@@ -531,7 +530,7 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 28px;
-  padding-bottom: 64px;
+  padding-bottom: 50px;
 }
 
 .cool-reasons {
@@ -834,6 +833,7 @@ a {
   margin-right: 195px;
 }
 
+
 .price-per-day  {
   display: flex;
   flex-direction: column;
@@ -896,7 +896,7 @@ a {
   align-items: flex-end;
   padding-left: 6%;
   padding-right: 6%;
-  margin-bottom: 58px;
+  margin-bottom: 56px;
 }
 
 .catalog-item h3 {
@@ -922,7 +922,12 @@ a {
   display: flex;
   margin-top: 7px;
   margin-right: 39px;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
+}
+
+.catalog-item-buttons {
+  display: flex;
+  align-items: flex-end;
 }
 
  .catalog-item-category  {
@@ -938,21 +943,21 @@ a {
 }
 
 .catalog-item-detail-information {
-  margin-right: 2px;
+  margin-right: 6px;
 }
 
 .catalog-item-detail-information {
-  padding-top: 4px;
-  padding-bottom: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-left: 17px;
   padding-right: 17px;
 }
 
 .button-reserve {
-  padding-top: 4px;
-  padding-bottom: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-left: 17px;
-  padding-right: 17px;
+  padding-right: 18px;
 }
 
 
