@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*,*::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +16,7 @@ body {
   color: #333333;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 /*ГЛАВНАЯ СТРАНИЦА*/
@@ -61,7 +68,6 @@ a {
 /*Блок преимуществ*/
 
 .sedona-photo {
-  width: 1200px;
   height: 780px;
 
   background-color: #88b6d1;
@@ -220,7 +226,6 @@ a {
 /*Карта*/
 
 .map {
-  width: 1200px;
   height: 593px;
 
   background-image: url(../img/background-images/map.png);
@@ -299,6 +304,7 @@ a {
   background-image: url(../img/background-images/filter-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position:   center -55px;
 }
 
 .filter fieldset {
@@ -443,63 +449,77 @@ a {
 
 /*Главная страница*/
 
-.main-header-logo {
-  display: flex;
+.wrapper {
   width: 1200px;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 138px;
+  height: 70px;
 }
 
 
 .site-navigation {
   display: flex;
-  width: 1200px;
   margin: 0;
   padding: 0;
-  margin-top: -65px;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   background-color: #ffffff;
 }
 
-.site-navigation-item {
+.site-navigation-item,
+.site-navigation-current-item {
   width: 300px;
 }
 
 .site-navigation-item:nth-child(1) {
   text-align: left;
-  padding-left: 74px;
+  padding-left: 72px;
+  margin-top: 4px;
 }
 
 .site-navigation-item:nth-child(2) {
   text-align: left;
+  padding-top: 4px;
+  padding-left: 13px;
+
 }
 
 .site-navigation-item:nth-child(3) {
   text-align: right;
+  padding-top: 4px;
+  padding-right: 16px;
 }
 
 .site-navigation-item:nth-child(4) {
   text-align: right;
-  padding-right: 74px;
+  padding-right: 72px;
+  padding-top: 4px;
+}
+
+.site-navigation-current-item {
+  text-align: right;
+  padding-right: 72px;
+  padding-top: 4px;
 }
 
 .sedona-photo {
-
-  margin-bottom: -156px;
-}
-
-.sedona-photo h1 {
-  padding: 0;
-  margin: 0;
+  height: 580px;
+  background-position: center -56px;
 }
 
 .sedona-welcome {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  margin: -12px;
 }
 
 .sedona-welcome-heading {
@@ -510,97 +530,250 @@ a {
 .sedona-welcome-description {
   margin: 0;
   padding: 0;
-  padding-top: 33px;
-  padding-bottom: 52px;
+  padding-top: 28px;
+  padding-bottom: 64px;
 }
 
 .cool-reasons {
   display: flex;
-
-  width: 1200px;
-  height: 256px;
+  min-height: 256px;
+  line-height: 0;
 }
 
-.cool-reasons-item-city {
-  width: 400px;
+.cool-reasons-item-city h3,
+.cool-reasons-item-city p,
+.cool-reasons-item-city span
+{
+  margin: 0;
+}
 
+
+.cool-reasons-item-city h3 {
   padding-top: 45px;
-  padding-right: 60px;
-  padding-bottom: 63px;
-  padding-left:  60px;
+  padding-bottom: 26px;
+  padding-right: 139px;
+  padding-left: 138px;
+}
+
+.cool-reasons-item-city p {
+  padding-top: 20px;
+  padding-right: 45px;
+  padding-bottom: 60px;
+  padding-left: 50px;
 }
 
 .cool-reasons-item-bridge {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   order: 1;
 
   width: 400px;
+}
 
-  padding-top: 45px;
-  padding-right: 45px;
-  padding-bottom: 63px;
-  padding-left:  50px;
+.cool-reasons-item-bridge h3,
+.cool-reasons-item-bridge p,
+.cool-reasons-item-bridge span
+{
+  margin: 0;
+}
+
+.cool-reasons-item-bridge h3 {
+  padding-top: 35px;
+  padding-bottom: 3px;
+  padding-right: 125px;
+  padding-left: 124px;
+}
+
+.cool-reasons-item-bridge p {
+
+  padding-bottom: 51px;
+  padding-right: 49px;
+  padding-left: 48px;
 }
 
 .offers {
   display: flex;
-  justify-content: space-around;
 
-  width: 1200px;
-  height: 330px;
+  min-height: 330px;
 }
 
-.offers-housing,
-.offers-food,
-.offers-souvenirs {
+.offers-housing h3,
+.offers-food h3,
+.offers-souvenirs h3 {
+  margin: 0;
+  padding: 0;
+}
 
-  padding-top: 163px;
-  padding-right: 74px;
-  padding-bottom: 85px;
-  padding-left: 74px;
+.offers-housing p,
+.offers-food p,
+.offers-souvenirs p {
+  margin: 0;
+  padding: 0;
+}
+
+.offers-housing {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+}
+
+.offers-housing h3 {
+  padding-top: 160px;
+  padding-left: 163px;
+  padding-right: 163px;
+}
+
+.offers-housing p {
+  padding-top: 23px;
+  padding-left: 73px;
+  padding-right: 72px;
+}
+
+.offers-food {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+}
+
+.offers-food h3 {
+  padding-top: 160px;
+  padding-left: 182px;
+  padding-right: 182px;
+}
+
+.offers-food p {
+  padding-top: 23px;
+  padding-left: 57px;
+  padding-right: 54px;
+}
+
+.offers-souvenirs {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+}
+
+.offers-souvenirs h3 {
+  padding-top: 160px;
+  padding-left: 151px;
+  padding-right: 181px;
+}
+
+.offers-souvenirs p {
+  padding-top: 23px;
+  padding-left: 59px;
+  padding-right: 55px;
 }
 
 .cool-reasons-other {
   display: flex;
-  width: 1200px;
-  height: 256px;
+
+
+  min-height: 256px;
 }
 
-.cool-reasons-other-item {
+.cool-reasons-other-item h3,
+.cool-reasons-other-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.cool-reasons-other-item:nth-child(1) h3 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
   padding-top: 45px;
-  padding-right: 68px;
-  padding-bottom: 63px;
+  padding-right: 95px;
+  padding-bottom: 24px;
+  padding-left: 97px;
+}
+
+.cool-reasons-other-item:nth-child(1) p {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-top: 21px;
+  padding-right: 95px;
+  padding-bottom: 24px;
+  padding-left: 97px;
+}
+
+.cool-reasons-other-item:nth-child(2) h3 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-top: 45px;
+  padding-right: 147px;
+  padding-bottom: 24px;
+  padding-left: 150px;
+}
+
+.cool-reasons-other-item:nth-child(2) p {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-top: 21px;
+  padding-right: 67px;
+  padding-bottom: 24px;
   padding-left: 69px;
+}
+
+.cool-reasons-other-item:nth-child(3) h3 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-top: 45px;
+  padding-right: 147px;
+  padding-bottom: 24px;
+  padding-left: 150px;
+}
+
+.cool-reasons-other-item:nth-child(3) p {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-top: 21px;
+  padding-right: 70px;
+  padding-bottom: 24px;
+  padding-left: 70px;
 }
 
 .search-hotels-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1200px;
 }
 
 .search-hotels-question {
   margin: 0;
-  padding-top: 55px;
+  padding-top: 48px;
 }
 
 .search-hotels-info {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 47px;
+  padding-left: 3px;
 }
 
 .modal-search-button {
-  padding-top: 33px;
+  padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 140px;
-  padding-right: 140px;
+  padding-right: 137px;
+}
+
+.map {
+  background-position: center -179px;
 }
 
 .main-footer {
   display: flex;
-
-  padding-top: 36px;
+  padding-top: 21px;
   padding-bottom: 36px;
   align-items: center;
 }
@@ -609,7 +782,7 @@ a {
   width: 240px;
   margin: 0;
   margin-right: 88px;
-  margin-left: 74px;
+  margin-left: 133px;
 }
 
 .footer-social {
@@ -619,39 +792,46 @@ a {
   margin-right: 88px;
 }
 
-.footer-copright {
+.footer-copyright {
   width: 240px;
   margin: 0;
   margin-left: 88px;
-  margin-right: 74px;
+  margin-right: 111px;
 }
 
 /*Гостиницы*/
 
 .filter {
   display: flex;
-  width: 1200px;
-  height: 217px;
+  min-height: 217px;
 }
 
-ul .filter-option  {
+.filter-option {
   list-style: none;
+}
+
+.filter-option:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .infrastructure-type-of-housing-wrapper {
   display: flex;
-  margin-top: 30px;
+  margin-top: 27px;
+}
+
+ legend {
+  margin-bottom: 6px;
 }
 
 .infrastructure {
   width: 241px;
-  margin-left: 73px;
-  align-items: center;
+  margin-left: 61px;
+  margin-right: 14px
 }
 
 .type-of-housing {
   width: 288px;
-  margin-right: 200px;
+  margin-right: 195px;
 }
 
 .price-per-day  {
@@ -662,7 +842,15 @@ ul .filter-option  {
 
   width: 328px;
   margin-right: 73px;
-  margin-top: 30px;
+  margin-top: 27px;
+}
+
+.price-per-day-show-button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 33px;
+  padding-right: 33px;
+
 }
 
 .sort-hotels {
@@ -675,17 +863,14 @@ ul .filter-option  {
   padding: 0;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 75px;
-  margin-right: 50px;
+  margin-left: 72px;
+  margin-right: 48px;
 }
 
 .sort-hotels-sorting {
   margin: 0;
   padding: 0;
-  margin-top: 38px;
-  margin-bottom: 34px;
-  margin-left: 49px;
-  margin-right: 40px;
+  margin-top: 30px;
 }
 
 .sort-options-list  {
@@ -697,39 +882,78 @@ ul .filter-option  {
   margin-right: 32px;
 }
 
-.catalog-item-amara {
-  display: flex;
-  align-content: center;
+.catalog {
+  padding-top: 26px;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-item {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-bottom: 58px;
 }
 
-.catalog-item-hotel-container {
+.catalog-item h3 {
+  margin: 0;
+}
+
+.catalog-item-stars-wrapper {
+  margin-left: auto;
+}
+
+.catalog-item-rating {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 14px;
+}
+
+.catalog-details-and-buttons {
+  margin-left: 30px;
+}
+
+.catalog-item-details {
   display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  width: 112px;
+  margin-top: 7px;
+  margin-right: 39px;
+  margin-bottom: 17px;
 }
 
-.catalog-item-reserve-container {
-  display: flex;
-  flex-direction: column;
-
-  align-items:flex-end;
+ .catalog-item-category  {
+  width: 110px;
+  margin-right: 5px;
+  margin-left: 0;
 }
 
+ .catalog-item-price  {
+  width: 142px;
+  margin-right: auto;
+  margin-left: 0;
+}
 
+.catalog-item-detail-information {
+  margin-right: 2px;
+}
 
+.catalog-item-detail-information {
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
 
-
-
-
-
-
-
+.button-reserve {
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
 
 
 
