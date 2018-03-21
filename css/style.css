@@ -593,7 +593,9 @@ a {
 
 .offers {
   display: flex;
-
+  flex-direction: row;
+  align-items: center;
+  padding-top: 79px;
   min-height: 330px;
 }
 
@@ -619,7 +621,6 @@ a {
 }
 
 .offers-housing h3 {
-  padding-top: 160px;
   padding-left: 163px;
   padding-right: 163px;
 }
@@ -638,7 +639,6 @@ a {
 }
 
 .offers-food h3 {
-  padding-top: 160px;
   padding-left: 182px;
   padding-right: 182px;
 }
@@ -657,7 +657,6 @@ a {
 }
 
 .offers-souvenirs h3 {
-  padding-top: 160px;
   padding-left: 151px;
   padding-right: 181px;
 }
@@ -670,7 +669,7 @@ a {
 
 .cool-reasons-other {
   display: flex;
-
+  padding-top: 47px;
 
   min-height: 256px;
 }
@@ -685,10 +684,9 @@ a {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding-top: 45px;
   padding-right: 95px;
   padding-bottom: 24px;
-  padding-left: 97px;
+  padding-left: 96px;
 }
 
 .cool-reasons-other-item:nth-child(1) p {
@@ -698,17 +696,16 @@ a {
   padding-top: 21px;
   padding-right: 95px;
   padding-bottom: 24px;
-  padding-left: 97px;
+  padding-left: 96px;
 }
 
 .cool-reasons-other-item:nth-child(2) h3 {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding-top: 45px;
   padding-right: 147px;
   padding-bottom: 24px;
-  padding-left: 150px;
+  padding-left: 149px;
 }
 
 .cool-reasons-other-item:nth-child(2) p {
@@ -725,7 +722,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding-top: 45px;
   padding-right: 147px;
   padding-bottom: 24px;
   padding-left: 150px;
@@ -906,6 +902,14 @@ a {
 .catalog-item-stars-wrapper {
   margin-left: auto;
 }
+
+/*
+.catalog-item-stars {
+  width: 100px;
+  height: 20px;
+  background-color: aqua
+}
+*/
 
 .catalog-item-rating {
   padding-top: 4px;
