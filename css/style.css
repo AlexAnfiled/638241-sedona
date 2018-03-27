@@ -143,11 +143,10 @@ a {
   line-height: 24px;
 }
 
-
 .modal-search {
   width: 568px;
 
-  padding: 55px;
+  padding: 55px;          
   margin-left: 315px;
 
   box-shadow: 0 0 25px 5px rgba(0, 0 ,0, 0.1);
@@ -197,6 +196,8 @@ a {
 }
 
 .modal-search-arrivals-departures  p {
+  display: flex;                 align-items: center;
+  justify-content: flex-end;
   margin: 0;
   margin-bottom: 29px;
 }
@@ -206,7 +207,7 @@ a {
 }
 
 .modal-search-departure-container {
-  margin-right: 16px;
+  margin-right: 17px;
 }
 
 .modal-search-adults-children {
@@ -224,14 +225,17 @@ a {
   width: 38px;
   height: 38px;
   margin: 0;
+        
+  -moz-appearance: textfield;
 }
 
 .modal-search-adults-container {
-   margin-right: 40px;
+  margin-right: 40px;
+  letter-spacing: 0.1px;
 }
 
 .modal-search-children-container {
-   margin-right: 27px;
+  margin-right: 27px;
 }
 
 .modal-search-adults-children p {
@@ -1023,7 +1027,7 @@ a {
   padding-top: 21px;
   padding-right: 95px;
   padding-bottom: 24px;
-  padding-left: 96px;
+  padding-left: 95px;
 }
 
 .cool-reasons-other-item:nth-child(2) h3 {
