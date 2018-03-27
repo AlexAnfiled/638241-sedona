@@ -229,6 +229,11 @@ a {
   -moz-appearance: textfield;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+
 .modal-search-adults-container {
   margin-right: 40px;
   letter-spacing: 0.1px;
@@ -428,12 +433,19 @@ a {
 /*Карта*/
 
 .map {
-  height: 593px;
-
+  width: 1200px;
+  height:593px;
   background-image: url(../img/background-images/map.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: beige;
+}
+
+.map iframe {
+  width: 1200px;
+  height: 593px;
+  
+  border: 0;  
 }
 
 /*Футер*/
