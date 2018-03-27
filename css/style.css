@@ -211,43 +211,52 @@ a {
 
 .modal-search-adults-children {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
   width: 458px;
-  justify-content: space-between;
 }
 
 .modal-search-adults-children input[type="number"] {
   box-sizing: border-box;
   text-align: center;
-  width: 114px;
-  padding: 10px 40px;
-}
-
-.modal-search-adults-container {
-   margin-right: 20px;
-}
-
-.modal-search-adults-input {
-   margin-left: 16px;
-}
-
-.modal-search-children-input {
-   margin-left: 23px;
-}
-
-.modal-search-adults-children p {
+  width: 38px;
+  height: 38px;
   margin: 0;
 }
 
-.modal-search-adults-children {
+.modal-search-adults-container {
+   margin-right: 40px;
+}
+
+.modal-search-children-container {
+   margin-right: 27px;
+}
+
+.modal-search-adults-children p {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.modal-search-adults-children p {
   position: relative;
 }
 
 .modal-search-adults-minus-button,
-.modal-search-children-minus-button,
 .modal-search-adults-plus-button,
-.modal-search-children-plus-button {
-  position: absolute;
+.modal-search-children-minus-button,
+.modal-search-children-plus-button
+ {
+  border: none;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: #f2f2f2;
+
+   cursor: pointer;
 }
 
 .modal-search-adults-minus-button::before {
@@ -257,8 +266,9 @@ a {
   width: 11px;
   height: 3px;
 
+  right: 88px;
   top: 18px;
-  left: 32px;
+
 
   background-color: #a9a9a9;
   cursor: pointer;
@@ -271,8 +281,8 @@ a {
   width: 11px;
   height: 3px;
 
+  right: 88px;
   top: 18px;
-  left: 39px;
 
   background-color: #a9a9a9;
   cursor: pointer;
@@ -286,8 +296,8 @@ a {
   width: 11px;
   height: 3px;
 
-  bottom: 17px;
-  left: 90px;
+  right: 12px;
+  top: 18px;
 
   background-color: #a9a9a9;
   cursor: pointer;
@@ -301,8 +311,8 @@ a {
   width: 11px;
   height: 3px;
 
-  bottom: 17px;
-  left: 65px;
+  right: 12px;
+  top: 18px;
 
   background-color: #a9a9a9;
   cursor: pointer;
@@ -327,7 +337,7 @@ a {
 .modal-search-adults-plus-button:active::before,
 .modal-search-adults-plus-button:active::after,
 .modal-search-children-plus-button:active::before,
-.modal-search-children-plus-button:active::after{
+.modal-search-children-plus-button:active::after {
   background-color: #81b3d2;
 }
 
@@ -604,8 +614,8 @@ a {
 }
 
 .range-toggle {
-
   box-sizing: content-box;
+
   position: absolute;
   top: -10px;
 
@@ -619,7 +629,6 @@ a {
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 
   cursor: pointer;
-
 }
 
 .range-toggle:hover {
@@ -851,6 +860,12 @@ a {
   line-height: 0;
 }
 
+.cool-reasons-item-city {
+
+  margin-bottom: 161px;
+
+}
+
 .cool-reasons-item-city h3,
 .cool-reasons-item-city p,
 .cool-reasons-item-city span
@@ -906,8 +921,9 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 79px;
-  min-height: 330px;
+  padding-bottom: 83px;
+/*  padding-top: 79px;*/
+/*  min-height: 330px;*/
 }
 
 .offers-housing h3,
@@ -1298,10 +1314,21 @@ a {
   justify-content: center;
   width: 46px;
   height: 48px;
-  padding-top: 6px;
+
   margin-right: 6px;
 
   background-color: #81b3d2;
+}
+
+.social-link a {
+  display: flex;
+
+
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 48px;
 }
 
 .footer-copyright {
