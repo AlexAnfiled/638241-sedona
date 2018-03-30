@@ -1182,6 +1182,10 @@ input::-webkit-inner-spin-button {
   color: #000000;
 }
 
+.footer-copyright-link svg {
+pointer-events: none
+}
+
 .footer-copyright-link path {
   fill: #231f20;   
 }
