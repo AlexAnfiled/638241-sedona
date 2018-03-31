@@ -2,7 +2,10 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-*,*::before, *::after {
+
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
@@ -27,9 +30,9 @@ body {
 
   background-color: #ffffff;
 
-  -webkit-box-shadow: 0 0 55px 5px rgba(0, 0 ,0, 0.1);
+  -webkit-box-shadow: 0 0 55px 5px rgba(0, 0, 0, 0.1);
 
-  box-shadow: 0 0 55px 5px rgba(0, 0 ,0, 0.1);
+  box-shadow: 0 0 55px 5px rgba(0, 0, 0, 0.1);
 }
 
 /*ГЛАВНАЯ СТРАНИЦА*/
@@ -168,6 +171,8 @@ a {
 
   margin: 0;
   padding: 0;
+  padding-left: 371px;
+  padding-right: 371px;
 }
 
 .sedona-welcome-description {
@@ -182,13 +187,14 @@ a {
   padding-bottom: 50px;
 }
 
-
 .cool-reasons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 256px;
   line-height: 0;
+
+  background-color: #81b3d2;
 }
 
 .cool-reasons-item-city,
@@ -214,7 +220,7 @@ a {
 }
 
 .cool-reasons-item-city {
-  margin-bottom: 161px;
+  /*  margin-bottom: 161px;*/
 }
 
 .cool-reasons-item-city h3,
@@ -222,8 +228,7 @@ a {
 .cool-reasons-item-city span,
 .cool-reasons-item-bridge h3,
 .cool-reasons-item-bridge p,
-.cool-reasons-item-bridge span
-{
+.cool-reasons-item-bridge span {
   margin: 0;
 }
 
@@ -397,6 +402,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
 
+  padding-top: 161px;
   padding-bottom: 83px;
 
   text-align: center;
@@ -559,6 +565,8 @@ a {
 .search-hotels-info {
   font-size: 14px;
   line-height: 24px;
+
+  width: 567px;
 }
 
 .search-hotels-header {
@@ -685,11 +693,11 @@ a {
 /*-----------*/
 
 .modal {
-display: block;
+  display: block;
 }
 
 .modal-hide {
-display: none;
+  display: none;
 }
 
 .modal-search {
@@ -700,8 +708,8 @@ display: none;
   margin-left: 315px;
 
   background-color: #ffffff;
-  -webkit-box-shadow: 0 0 25px 5px rgba(0, 0 ,0, 0.1);
-  box-shadow: 0 0 25px 5px rgba(0, 0 ,0, 0.1);
+  -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1);
 
   -webkit-animation: bounce 0.9s;
 
@@ -761,7 +769,7 @@ display: none;
   fill: #81b3d2;
 }
 
-.modal-search-arrivals-departures  p {
+.modal-search-arrivals-departures p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,7 +823,7 @@ display: none;
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
--webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .modal-search-adults-container {
@@ -844,8 +852,7 @@ input::-webkit-inner-spin-button {
 .modal-search-adults-minus-button,
 .modal-search-adults-plus-button,
 .modal-search-children-minus-button,
-.modal-search-children-plus-button
- {
+.modal-search-children-plus-button {
   border: none;
 
   width: 38px;
@@ -981,11 +988,11 @@ input::-webkit-inner-spin-button {
 }
 
 .modal-search-arrivals-departures input:hover {
-  background-color:  #ebebeb;
+  background-color: #ebebeb;
 }
 
 .modal-search-arrivals-departures input:focus {
-  background-color:  #ffffff;
+  background-color: #ffffff;
   outline: 2px solid #e5e5e5;
 }
 
@@ -1025,7 +1032,7 @@ input::-webkit-inner-spin-button {
 
 .map {
   width: 1200px;
-  height:593px;
+  height: 593px;
   background-image: url(../img/background-images/map.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -1052,7 +1059,7 @@ input::-webkit-inner-spin-button {
   padding-bottom: 36px;
 }
 
- .main-footer-index  {
+.main-footer-index {
   width: 1200px;
 
   margin-top: -120px;
@@ -1102,7 +1109,7 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  
+
 
   margin-right: 6px;
 
@@ -1123,7 +1130,7 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-    
+
   width: 46px;
   height: 48px;
 }
@@ -1132,22 +1139,16 @@ input::-webkit-inner-spin-button {
   fill: #ffffff;
 }
 
-.social-link-tw:hover,
-.social-link-fb:hover,
-.social-link-yt:hover {
+.social-link-item:hover {
   color: #669ec0;
   background-color: #669ec0;
 }
 
-.social-link-tw:active,
-.social-link-fb:active,
-.social-link-yt:active  {
+.social-link-item:active {
   background-color: #5496bd;
 }
 
-.social-link-tw:active path,
-.social-link-fb:active path,
-.social-link-yt:active path {
+.social-link-item:active path {
   fill: #88b6d1;
 }
 
@@ -1183,11 +1184,11 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-copyright-link svg {
-pointer-events: none
+  pointer-events: none
 }
 
 .footer-copyright-link path {
-  fill: #231f20;   
+  fill: #231f20;
 }
 
 .footer-copyright-link:hover path {
@@ -1301,7 +1302,7 @@ pointer-events: none
   margin-top: 27px;
 }
 
- legend {
+legend {
   margin-bottom: 6px;
 }
 
@@ -1402,7 +1403,7 @@ pointer-events: none
   top: -9px;
 
   width: 4px;
-  height:4px;
+  height: 4px;
 
   background: #ababab;
 
@@ -1446,7 +1447,7 @@ pointer-events: none
   background-color: #ffffff;
 }
 
-.filter-range  {
+.filter-range {
   width: 318px;
   margin-left: 10px;
   margin-top: 27px;
@@ -1503,6 +1504,7 @@ pointer-events: none
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
+
 .sort-options-list a:hover {
   color: #81b3d2;
   border-bottom: 1px dotted #81b3d2;
@@ -1524,7 +1526,7 @@ pointer-events: none
   margin-top: 30px;
 }
 
-.sort-options-list  {
+.sort-options-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1560,7 +1562,7 @@ pointer-events: none
 }
 
 .sort-hotels-order-up:hover path,
-.sort-hotels-order-down:hover:not(.sort-hotels-current-order) path  {
+.sort-hotels-order-down:hover:not(.sort-hotels-current-order) path {
   fill: #231f20;
 }
 
@@ -1621,6 +1623,7 @@ pointer-events: none
 
 .catalog-details-and-buttons {
   margin-left: 30px;
+  width: 300px;
 }
 
 .catalog-item-details {
@@ -1641,13 +1644,13 @@ pointer-events: none
   align-items: flex-end;
 }
 
- .catalog-item-category  {
+.catalog-item-category {
   width: 110px;
   margin-right: 5px;
   margin-left: 0;
 }
 
- .catalog-item-price  {
+.catalog-item-price {
   width: 142px;
   margin-right: auto;
   margin-left: 0;
