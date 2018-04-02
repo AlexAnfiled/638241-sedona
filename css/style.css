@@ -43,18 +43,18 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
-  position: absolute;
+.visually-hidden:not(:focus):not(:active), input[type=checkbox].visually-hidden, input[type=radio].visually-hidden {
+position: absolute;
 
-  width: 1px;
-  height: 1px;
+width: 1px;
+height: 1px;
 
-  margin: -1px;
-  border: 0;
-  padding: 0;
+margin: -1px;
+border: 0;
+padding: 0;
 
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 .main-navigation {
@@ -1295,6 +1295,10 @@ input::-webkit-inner-spin-button {
   opacity: 0.3;
 }
 
+.filter-option-checkbox:focus+label {
+  outline: 1px solid #ffffff;
+}
+
 .infrastructure-type-of-housing-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1438,7 +1442,7 @@ legend {
 
   border: 2px solid white;
   border-radius: 2px;
-  outline: none;
+
   cursor: pointer;
 }
 
@@ -1673,7 +1677,6 @@ legend {
 
   background-color: #81b3d2;
   border: none;
-  outline: none;
 }
 
 .catalog-item-detail-information:hover {
@@ -1700,7 +1703,6 @@ legend {
 
   background-color: #766357;
   border: none;
-  outline: none;
 }
 
 .button-reserve:hover {
